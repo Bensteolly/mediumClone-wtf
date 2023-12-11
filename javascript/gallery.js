@@ -96,4 +96,6 @@ const removeImage = () => {
   gallery.removeChild(li);
 };
 
+removeBtn.addEventListener('click')
+
 fillGallery();
