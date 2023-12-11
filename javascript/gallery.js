@@ -81,8 +81,8 @@ galleryForm.addEventListener('submit',  (event) => {
 })
 
 const removeImage = () => {
-  const img = imageList.shift(); 
-  const li = document.createElement("li");
+  const img = [].concat(imageList).shift(); 
+  const li = document.createElement("li");git 
   li.innerHTML = `
     <div class="card">
       <aside class="imageWrapper">
